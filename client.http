@@ -1,0 +1,85 @@
+### GET /posts
+GET http://localhost:3009/posts HTTP/posts1.1
+
+### GET /posts/1
+GET http://localhost:3009/orders/5f1a3dde6878200004543226 HTTP/1.1
+
+### with invalid id
+GET http://localhost:3000/posts/5f0e5bbcb9367a2cf1186552 HTTP/1.1
+
+### POST /posts
+POST http://localhost:3000/posts HTTP/1.1
+content-type: application/json
+
+{
+    "title": "a new post",
+    
+	"category": "code",
+	"content": "this is a new post about code"
+}
+
+### POST /posts (with no category)
+POST http://localhost:3009/orders HTTP/1.1
+content-type: application/json
+
+{
+    "customer_name": "AWESOMEEEEEEEE",
+	"order_details": "this is afff new post about code"
+}
+
+### POST /posts (with no category)
+POST http://localhost:3009/posts HTTP/1.1
+content-type: application/json
+
+{
+    "name": "AWESOMEEEEEEEE",
+	"description": "this is afff new post about code"
+}
+### DELETE /posts/id 
+
+DELETE http://localhost:3009/orders/5f1a3dde6878200004543226 HTTP/1.1
+
+### PUT /posts/1
+PUT http://localhost:3000/posts/5f11329c9ce7d6191b75dfa8 HTTP/1.1
+content-type: application/json
+
+{
+    "title": "updated post",
+    "username": "aaa",
+	"category": "general",
+	"content": "this post has been updated"
+}
+
+### PUT /posts/1 (no category)
+PUT http://localhost:3000/posts/5f10475c664bc00a02dc0476 HTTP/1.1
+content-type: application/json
+
+{
+    "title": "updated post",
+    "username": "tester",
+	"content": "this post has been updated"
+}
+
+### POST /auth/login 
+POST http://localhost:3009/auth/login
+content-type: application/json
+
+{
+	"username": "admin",
+	"password": "abc123"
+}
+### GET /auth/logout
+GET http://localhost:3009/auth/logout
+
+### POST /auth/register 
+POST http://localhost:3009/auth/register
+content-type: application/json
+
+{
+	"username": "ball",
+	"email": "auto-tester1@abc.com",	
+	"password": "abc123"
+
+	
+	
+}
