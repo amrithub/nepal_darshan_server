@@ -32,7 +32,7 @@ POST http://localhost:3009/posts HTTP/1.1
 content-type: application/json
 
 {
-    "name": "AWESOMEEEEEEEE",
+    "name": "AWESOMEEEEEEEEssssss",
 	"description": "this is afff new post about code"
 }
 ### DELETE /posts/id 
