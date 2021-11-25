@@ -43,7 +43,7 @@ mongoose.connect(dbConn, {
 // Install middleware
 
 // Use cors
-const whitelist = ['http://localhost:3000','https://nepaldarshan.netlify.app/']
+const whitelist = ['http://localhost:3000','https://nervous-galileo-e7f82a.netlify.app/auth/login']
 
 //const whitelist = ['http://localhost:3000']
 app.use(cors({
